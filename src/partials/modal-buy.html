@@ -1,6 +1,144 @@
 <div class="backdrop-buy is-hidden" data-modal-buy="/src/js/modal-buy.js">
   <div class="buy-window">
-    <button class="close" type="button" data-modal-buy-close></button>
-    Okno modalne BUY
+    <button class="buy-close" type="button" data-modal-buy-close>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+      >
+        <path
+          d="M18 6L6 18"
+          stroke="#111111"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M6 6L18 18"
+          stroke="#111111"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
+    <h2 class="buy-now"><span class="buy-span">BUY</span> NOW</h2>
+
+    <div class="buy-schoco-div">
+      <div class="buy-schoco">
+        <div class="buy-schoco-cont">
+          <div class="buy-schoco-cont-one"></div>
+          <button class="buy-grams">100 g</button>
+        </div>
+      </div>
+
+      <div class="buy-schoco-two">
+        <div class="buy-schoco-cont">
+          <div class="buy-schoco-cont-two"></div>
+          <button class="buy-grams">200 g</button>
+        </div>
+      </div>
+
+      <div class="buy-schoco-three">
+        <div class="buy-schoco-cont">
+          <div class="buy-schoco-cont-three"></div>
+          <button class="buy-grams">300 g</button>
+        </div>
+      </div>
+    </div>
+
+    <form class="buy-form">
+      <div class="buy-p-inf">
+        <p class="buy-form-p">Personal information</p>
+        <div class="buy-inp-div">
+          <div class="buy-input-div buy-first-row-div">
+            <label for="buy-name"></label>
+            <input type="text" id="buy-name" placeholder="Name" class="buy-input" required />
+          </div>
+          <div class="buy-input-div buy-first-row-div">
+            <label for="buy-surname"></label>
+            <input type="text" id="buy-surname" placeholder="Surname" class="buy-input" required />
+          </div>
+        </div>
+      </div>
+
+      <div class="buy-p-inf">
+        <p class="buy-form-p">Email</p>
+        <div class="buy-input-div">
+          <label for="buy-email"></label>
+          <input
+            type="email"
+            id="buy-email"
+            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+            placeholder="Enter your email"
+            class="buy-input"
+            required
+          />
+        </div>
+      </div>
+
+      <div class="buy-p-inf">
+        <div class="buy-phone"></div>
+        <p class="buy-form-p">Phone number</p>
+        <div class="buy-input-div buy-phone-div">
+          <div class="buy-phone">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="buy-flag">
+              <use href="images/icons.svg#icon-flag" />
+            </svg>
+            <p class="buy-number">+380</p>
+          </div>
+          <div class="buy-number-two">
+            <label for="phone-number-buy"></label>
+            <input
+              type="tel"
+              id="phone-number-buy"
+              pattern="[0-9]{9}"
+              maxlength="9"
+              inputmode="numeric"
+              placeholder="Phone number"
+              class="buy-input"
+              required
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="buy-p-inf">
+        <p class="buy-form-p">Card number</p>
+        <div class="buy-input-div">
+          <div class="buy-card">
+            <label for="buy-card-number"></label>
+            <input
+              type="number"
+              inputmode="numeric"
+              pattern="[0-9]{16}"
+              id="buy-card-number"
+              placeholder="Enter card"
+              class="buy-input"
+              required
+            />
+            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="30" class="buy-ico">
+              <use href="images/icons.svg#icon-mastercard" />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="buy-p-inf">
+        <p class="buy-form-p">Comment</p>
+        <div class="buy-input-comment">
+          <textarea
+            id="user-comment"
+            name="user-comment"
+            placeholder="Enter text"
+            class="buy-input"
+          ></textarea>
+        </div>
+      </div>
+
+      <button class="buy-button-submit" type="submit">Submit</button>
+    </form>
   </div>
 </div>
